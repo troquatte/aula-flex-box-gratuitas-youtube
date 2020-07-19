@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Flex-box</title>
+
+  <style>
+    .flex {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+    }
+
+    .flex .item:nth-of-type(1),
+    .flex .item:nth-of-type(4) {
+      align-self: flex-start;
+    }
+
+    .flex .item:nth-of-type(5) {
+      align-self: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </main>
+
+</body>
+
+</html>
